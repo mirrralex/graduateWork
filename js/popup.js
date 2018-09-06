@@ -99,6 +99,12 @@ function sendForm(element) {
 	});
 
 }
+//60 секунд и popup
+setTimeout(function() {
+
+	sendForm(popupCallWindow);
+}, 6000);
+
 //Заказать обратный звонок
 contactUs.addEventListener('click', function(){
 
@@ -130,7 +136,7 @@ popupCallWindow.addEventListener('click', function(elem) {
 });
 
 function isDescendant(parent, child) {
-     var node = child.parentNode;
+     let node = child.parentNode;
      while (node != null) {
          if (node == parent) {
              return true;
