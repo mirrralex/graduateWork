@@ -415,8 +415,9 @@ textarea:focus {
   text-decoration: none;
   color: #454545;
 }
-/*test*/
-/*.tabs li {
+
+/*test*//*
+.tabs li {
 	display: inline-block;
 }
 .tabs .glazing_block.active  a {
@@ -427,6 +428,7 @@ textarea:focus {
 	display: none;
 }*/
 /*/test*/
+
 /*Decoration*/
 .decoration {
   padding: 8rem 0;
@@ -1471,4 +1473,18 @@ textarea:focus {
     -webkit-animation: none !important;
     animation: none !important;
   }
+}
+.glazing_components {
+  display: inline;
+}
+
+#timer{
+  width: 100px;
+  height: 100%;
+}
+
+.hours,
+.minutes,
+.seconds {
+  font-size: 1.5rem;
 }
