@@ -405,12 +405,6 @@ textarea:focus {
 .glazing_price_btn {
   padding: 2rem 2rem;
 }
-.glazing .aluminum,
-.glazing .plastic,
-.glazing .french,
-.glazing .rise {
-  display: none;
-}
 .glazing a.active {
   text-decoration: none;
   color: #454545;
@@ -427,7 +421,7 @@ textarea:focus {
 .tabs_divs .noactive {
 	display: none;
 }*/
-/*/test*/
+/*test*/
 
 /*Decoration*/
 .decoration {
@@ -1488,3 +1482,13 @@ textarea:focus {
 .seconds {
   font-size: 1.5rem;
 }
+/*.hide {
+  display: none;
+}
+.show {
+  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}*/
