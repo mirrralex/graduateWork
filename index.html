@@ -839,25 +839,21 @@
                  <h2>Калькулятор</h2>
                 <h3>Выберите форму балкона <br>и укажите размеры</h3>
                <div class="balcon_icons">
-                 <a href="#" class="type1">
-                   <img src="img/modal_calc/balkon/ba_01.png" alt="Тип1" class="type1_img"></a>
-                 <a href="#" class="type2">
-                   <img src="img/modal_calc/balkon/ba_02.png" alt="Тип2" class="type2_img"></a>
-                 <a href="#" class="type3">
-                   <img src="img/modal_calc/balkon/ba_03.png" alt="Тип3" class="type3_img"></a>
-                 <a href="#" class="type4"> 
-                   <img src="img/modal_calc/balkon/ba_04.png" alt="Тип4" class="type4_img"></a>
+                   <img src="img/modal_calc/balkon/ba_01.png" alt="Тип1" class="icons_image">
+                   <img src="img/modal_calc/balkon/ba_02.png" alt="Тип2" class="icons_image">
+                   <img src="img/modal_calc/balkon/ba_03.png" alt="Тип3" class="icons_image"">
+                   <img src="img/modal_calc/balkon/ba_04.png" alt="Тип4" class="icons_image">
                </div>
                 <div class="big_img text-center">
-                  <img src="img/modal_calc/balkon/type1.png" alt="" id="type1">
-                  <img src="img/modal_calc/balkon/type2.png" alt="" id="type2">
-                  <img src="img/modal_calc/balkon/type3.png" alt="" id="type3">
-                  <img src="img/modal_calc/balkon/type4.png" alt="" id="type4">
+                  <img src="img/modal_calc/balkon/type1.png" class = "big_image" alt="" id="type1">
+                  <img src="img/modal_calc/balkon/type2.png" class = "big_image" alt="" id="type2">
+                  <img src="img/modal_calc/balkon/type3.png" class = "big_image" alt="" id="type3">
+                  <img src="img/modal_calc/balkon/type4.png" class = "big_image" alt="" id="type4">
                 </div>
-                <input class="form-control" id="width" type="text" placeholder="Ширина" required>
+                <input class="form-control" id="width" type required = "number" placeholder="Ширина" required>
                 <label for="width">мм</label>
                 <div class="multiplication"><strong>&times;</strong></div>
-                <input class="form-control" id="height" type="text" placeholder="Высота" required>
+                <input class="form-control" id="height" type required = "number" placeholder="Высота" required>
                 <label for="height">мм</label>
                 <button class="button popup_calc_button">Далее</button>
             </div>
@@ -879,13 +875,13 @@
                  </select>
                  <img src="img/modal_calc/icon_cold.png" alt="">
                  <label>
-                     <input class="checkbox" type="checkbox" name="checkbox-test">
+                     <input class="checkbox" type="checkbox" name="checkbox-test" id= "cold type">
                      <span class="checkbox-custom" id="cold"></span>
                      <span class="label">Холодное</span>
                  </label>
                  <img src="img/modal_calc/icon_warm.png" alt="">
                  <label>
-                     <input class="checkbox" type="checkbox" name="checkbox-test">
+                     <input class="checkbox" type="checkbox" name="checkbox-test" id= "warm type">
                      <span class="checkbox-custom" id="warm"></span>
                      <span class="label">Теплое</span>
                  </label>
@@ -893,7 +889,7 @@
                  <button class="button popup_calc_profile_button">Далее</button>
             </div>
         </div>
-    </div> 
+    </div>
 
     <div class="popup_calc_end">
         <div class="popup_dialog">
@@ -992,5 +988,6 @@
    <script src="js/tab.js"></script>
     <!--<script src="js/timer.js"></script>-->
    <script src = "js/tabForWindow.js"></script>
+   <script src = "js/calculator.js"></script>
   </body>
 </html>

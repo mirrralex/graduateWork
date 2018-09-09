@@ -9,8 +9,6 @@ function tab(){
 		glassImage = document.getElementsByClassName('imgOfwork'),
 		glassType = document.getElementsByClassName('typeOfwork');
 
-//slick-current
-
 	function tabHide(elementNumber) {
 
 		for(let i = elementNumber; i < glassContentWarm.length; i++) {

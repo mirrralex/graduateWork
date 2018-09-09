@@ -34,27 +34,25 @@ function tabForWindows(){
 
 	for (let j = 0; j < decorItem.length; j++) {
 
-	decorItem[j].addEventListener('click', function(event) {
+		decorItem[j].addEventListener('click', function(event) {
 
-		let target = event.target;
+			let target = event.target;
 
-		if(target.classList.contains('decoration_item') || target.classList.contains('no_click') || target.classList.contains('decoration_name')) {
+			if(target.classList.contains('decoration_item') || target.classList.contains('no_click') || target.classList.contains('decoration_name')) {
 
-			for(let i = 0; i < decorItem.length; i++) {
+				for(let i = 0; i < decorItem.length; i++) {
 
-				if (target == decorItem[i] || target == decorClick[i] || target == decorName[i]) {
+					if (target == decorItem[i] || target == decorClick[i] || target == decorName[i]) {
 
-					tabShow(i);
+						tabShow(i);
 
-					break;
+						break;
 
+					}
 				}
 			}
-		}
-	});
+		});
+	}
 }
 
-
-}
 tabForWindows();
-

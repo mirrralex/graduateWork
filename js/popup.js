@@ -13,8 +13,6 @@ message.loading = 'Идет отправка';
 message.success = 'Спасибо, письмо отправлено';
 message.failure = 'К сожелению что-то пошло не так';
 
-
-
 function sendForm(element) {
 	let input = element.getElementsByTagName('input'),
 		inputName = input[0],
