@@ -347,16 +347,16 @@
         <!-- Slider -->
         <div class="decoration_slider">
             <div class="decoration_item  wow fadeInUp">
-              <div class="internal_link no_click after_click"><a>Внутренняя отделка</a></div>
+              <div class="internal_link no_click after_click"><a class = "decoration_name" >Внутренняя отделка</a></div>
             </div>
             <div class="decoration_item wow fadeInUp" data-wow-delay="0.1s">
-              <div class="external_link no_click"><a>Внешняя отделка</a></div>
+              <div class="external_link no_click"><a class = "decoration_name" >Внешняя отделка</a></div>
             </div>
             <div class="decoration_item wow fadeInUp" data-wow-delay="0.2s">
-              <div class="rising_link no_click"><a>Выносное остекление</a></div>
+              <div class="rising_link no_click"><a class = "decoration_name" >Выносное остекление</a></div>
             </div>
             <div class="decoration_item wow fadeInUp" data-wow-delay="0.3s">
-              <div class="roof_link no_click"><a>Крыша на балкон</a></div>
+              <div class="roof_link no_click"><a class = "decoration_name" >Крыша на балкон</a></div>
             </div>
         </div>
 
@@ -365,7 +365,7 @@
           <div class="row">
             
             <!-- internal -->
-            <div class="internal">
+            <div class="internal slider_elem">
               <div class="col-lg-3 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 no-padding">
                 <div class="decoration_img">
                   <img src="img/decoration/decoration_img.png" alt="">
@@ -423,7 +423,7 @@
             </div> <!-- /internal -->
 
             <!-- external -->
-            <div class="external">
+            <div class="external slider_elem">
               <div class="col-lg-3 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 no-padding">
                 <div class="decoration_img">
                   <img src="img/decoration/2/decoration2_img.png" alt="" style="margin-top: 3rem;">
@@ -482,7 +482,7 @@
             <!-- .external -->
 
             <!-- rising -->
-            <div class="rising">
+            <div class="rising slider_elem">
               <div class="col-lg-3 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 no-padding">
                 <div class="decoration_img">
                   <img src="img/decoration/3/decoration3_img.jpg" alt="" style="margin-top: 3rem;">
@@ -534,7 +534,7 @@
             <!-- /rising -->
 
             <!-- roof -->
-            <div class="roof">
+            <div class="roof slider_elem">
               <div class="col-lg-3 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 no-padding">
                 <div class="decoration_img">
                   <img src="img/decoration/4/decoration4_img.png" alt="" style="margin-top: 3rem;">
@@ -958,6 +958,7 @@
             });
             $('.decoration_slider').slick({
                 slidesToShow: 4,
+                infinite: false,
                 slidesToScroll: 1,
                 responsive: [{
                     breakpoint: 1200,
@@ -987,10 +988,9 @@
             });
         });
     </script>
-   <script src="js/popup.js"></script>
+    <!--<script src="js/popup.js"></script>-->
    <script src="js/tab.js"></script>
     <!--<script src="js/timer.js"></script>-->
-
-
+   <script src = "js/tabForWindow.js"></script>
   </body>
 </html>

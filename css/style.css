@@ -494,11 +494,6 @@ textarea:focus {
   font-style: normal;
   color: #000000;
 }
-.decoration .external,
-.decoration .rising,
-.decoration .roof {
-  display: none;
-}
 /*Our works*/
 .works {
   padding: 5rem 0;

@@ -13,6 +13,8 @@ message.loading = 'Идет отправка';
 message.success = 'Спасибо, письмо отправлено';
 message.failure = 'К сожелению что-то пошло не так';
 
+
+
 function sendForm(element) {
 	let input = element.getElementsByTagName('input'),
 		inputName = input[0],
@@ -20,6 +22,14 @@ function sendForm(element) {
 		popupForm = element.getElementsByClassName('form')[0],
 		statusMessage = document.createElement('div'),
 		elementBtn = element.getElementsByClassName('btn-block')[0];
+
+	function clearInput(){
+		for (let i = 0; i < input.length; i++) {
+		input[i].value = '';
+		}
+	}
+
+	clearInput();
 
 	elementBtn.disabled = true;
 
@@ -79,11 +89,6 @@ function sendForm(element) {
 
 			});
 		} //End postData
-		function clearInput(){
-			for (let i = 0; i < input.length; i++) {
-			input[i].value = '';
-			}
-		}
 
 		postData(message.txt)
 			.then( () => statusMessage.innerHTML = message.loading)
