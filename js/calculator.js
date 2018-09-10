@@ -16,12 +16,12 @@ let popupCalcBtn = document.getElementsByClassName('popup_calc_btn'),
 	styleOfMaterial = '',
 	popupCalcProfileNextBtn = document.getElementsByClassName('popup_calc_profile_button')[0],
 	popupCalcEnd = document.getElementsByClassName('popup_calc_end')[0],
-	message = new Object(),
+	messagePost = new Object(),
 	target = null;
 
-message.loading = 'Идет отправка';
-message.success = 'Спасибо, письмо отправлено';
-message.failure = 'К сожелению что-то пошло не так';
+messagePost.loading = 'Идет отправка';
+messagePost.success = 'Спасибо, письмо отправлено';
+messagePost.failure = 'К сожелению что-то пошло не так';
 
 popupCalc.style.top = 'auto';
 popupCalc.style.left = 'auto';
@@ -244,7 +244,7 @@ function windowCaclulator() {
 
 					elementBtn.disabled = false;
 
-					message.txt = "Вам пришло сообщение от " + inputName.value + " что бы ему позвонить наберите " + inputPhone.value  + messageText;
+					messagePost.txt = "Вам пришло сообщение от " + inputName.value + " что бы ему позвонить наберите " + inputPhone.value  + messageText;
 
 				}
 		});
@@ -281,15 +281,15 @@ function windowCaclulator() {
 				});
 			} //End postData
 
-			postData(message.txt)
-				.then( () => statusMessage.innerHTML = message.loading)
+			postData(messagePost.txt)
+				.then( () => statusMessage.innerHTML = messagePost.loading)
 				.then( () => {
-					statusMessage.innerHTML = message.success;
+					statusMessage.innerHTML = messagePost.success;
 					setTimeout( () => {
 						statusMessage.innerHTML = '';
 					}, 3000);
 					})
-				.catch( () => statusMessage.innerHTML = message.failure)
+				.catch( () => statusMessage.innerHTML = messagePost.failure)
 				.then(clearInput);
 		
 		});
