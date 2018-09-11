@@ -103,4 +103,4 @@ function tab(){
 	});
 }
 
-tab();
+module.exports = tab();

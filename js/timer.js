@@ -5,11 +5,6 @@ function timer(){
 	let deadline = '2018-09-12',
 		eTimer = document.getElementById('eTimer');
 
-	console.log(eTimer.textContent);
-
-
-
-
 	eTimer.style.borderRadius = '8px';
 	eTimer.style.background = 'block';
 	eTimer.style.background = 'white';
@@ -163,4 +158,4 @@ function timer(){
 	setClock('eTimer', deadline);
 }
 
-timer();
+module.exports = timer();

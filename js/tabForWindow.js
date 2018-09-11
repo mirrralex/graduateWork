@@ -55,4 +55,4 @@ function tabForWindows(){
 	}
 }
 
-tabForWindows();
+module.exports = tabForWindows();
