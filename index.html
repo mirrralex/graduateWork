@@ -750,14 +750,15 @@
             <h2 class="sale_title">Акция - 60%</h2>
             <p class="sale_subtitle">Успей сэкономить на остеклении! Только до 4 июля!</p>
             <div class="timer">
-              <div id="eTimer">
-                <span  class = "time days">112</span>
-                <span>  </span>
-                <span  class = "time hours"></span>
-                <span>  </span>
-                <span  class = "time minutes"></span>
-                <span>  </span>
-                <span  class = "time seconds"></span>
+              <div id="eTimer">ДО ЗАВЕРШЕНИЯ АКЦИИ:<br>
+                <span  id = "days"></span>
+                <span>   </span>
+                <span  id = "hours"></span>
+                <span>   </span>
+                <span  id = "minutes"></span>
+                <span>   </span>
+                <span  id = "seconds"></span><br>
+                Дней Часов Минут Секунд
               </div>
             </div>
           </div> 
@@ -892,10 +893,10 @@
                   <img src="img/modal_calc/balkon/type3.png" class = "big_image" alt="" id="type3">
                   <img src="img/modal_calc/balkon/type4.png" class = "big_image" alt="" id="type4">
                 </div>
-                <input class="form-control" id="width" type required = "number" placeholder="Ширина" required>
+                <input class="form-control" id="width" required type = "number" placeholder="Ширина" required>
                 <label for="width">мм</label>
                 <div class="multiplication"><strong>&times;</strong></div>
-                <input class="form-control" id="height" type required = "number" placeholder="Высота" required>
+                <input class="form-control" id="height" required type = "number" placeholder="Высота" required>
                 <label for="height">мм</label>
                 <button class="button popup_calc_button">Далее</button>
             </div>

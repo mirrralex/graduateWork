@@ -97,7 +97,7 @@ function windowCaclulator() {
 
 			popupCalcNextBtn.disabled = true;
 
-			popupCalcBtn.innerHTML = "Введите пожалуйста ширину в милиметрах";
+			popupCalcBtn.textContent = "Введите пожалуйста ширину в милиметрах";
 
 		} else {
 
@@ -123,7 +123,7 @@ function windowCaclulator() {
 
 			popupCalcNextBtn.disabled = true;
 
-			popupCalcBtn.innerHTML = "Введите пожалуйста ширину в милиметрах";
+			popupCalcBtn.textContent = "Введите пожалуйста ширину в милиметрах";
 
 		} else {
 

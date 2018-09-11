@@ -1,11 +1,14 @@
+/*jshint esversion: 6 */
 //timer 
 function timer(){
 
 	let deadline = '2018-09-12',
 		eTimer = document.getElementById('eTimer');
-		time = document.getElementsByClassName('time');
 
-console.log(time[0]);
+	console.log(eTimer.textContent);
+
+
+
 
 	eTimer.style.borderRadius = '8px';
 	eTimer.style.background = 'block';
@@ -13,8 +16,6 @@ console.log(time[0]);
 	eTimer.style.textAlign = 'center';
 	eTimer.style.height = '100px';
 	eTimer.style.width = '250px';
-	eTimer.textContent = 'ДО ЗАВЕРШЕНИЯ АКЦИИ:';
-
 
 	function getTimeRemaining(endTime) {
 
@@ -61,22 +62,46 @@ console.log(time[0]);
 	function setClock(id, endTime) {
 
 		let timer = document.getElementById(id),
-			days = document.getElementsByClassName("days"),
-			hours = document.getElementsByClassName('hours'),
-			minutes = document.getElementsByClassName('minutes'),
-			seconds = document.getElementsByClassName('seconds');
+			days = document.getElementById("days"),
+			hours = document.getElementById('hours'),
+			minutes = document.getElementById('minutes'),
+			seconds = document.getElementById('seconds');
 
-		console.log(timer);
-		console.log(days);
-		console.log(minutes);
-		console.log(seconds);
+		days.style.background = "gray";
+		days.style.textAlign = 'center';
+		days.style.color = 'black';
+		days.style.width = '30px';
+		days.style.height = '45px';
+		days.style.fontSize = '28px';
+		days.style.display = 'inline-block';
+		days.style.borderRadius = '8px';
 
-		for (let i = 0; i < time.length; i++) {
+		hours.style.background = "gray";
+		hours.style.textAlign = 'center';
+		hours.style.color = 'black';
+		hours.style.width = '30px';
+		hours.style.fontSize = '28px';
+		hours.style.height = '45px';
+		hours.style.display = 'inline-block';
+		hours.style.borderRadius = '8px';
 
-			time[i].style.background = "black";
-			time[i].style.textAlign = 'center';
+		minutes.style.background = "gray";
+		minutes.style.textAlign = 'center';
+		minutes.style.color = 'black';
+		minutes.style.width = '30px';
+		minutes.style.height = '45px';
+		minutes.style.fontSize = '28px';
+		minutes.style.display = 'inline-block';
+		minutes.style.borderRadius = '8px';
 
-		}
+		seconds.style.background = "gray";
+		seconds.style.textAlign = 'center';
+		seconds.style.color = 'black';
+		seconds.style.width = '30px';
+		seconds.style.height = '45px';
+		seconds.style.fontSize = '28px';
+		seconds.style.display = 'inline-block';
+		seconds.style.borderRadius = '8px';
 
 		function updateClock() {
 
@@ -110,6 +135,7 @@ console.log(time[0]);
 			if(t.total <= 0) {
 				clearInterval(timeInterval);			
 			}
+
 			if(days.textContent < 0){
 
 				days.textContent = "00";
